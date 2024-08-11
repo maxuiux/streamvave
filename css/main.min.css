@@ -1,0 +1,1668 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+:root {
+  --streamvave-color-cyan-100: #E8F9FD;
+  --streamvave-color-cyan-200: #D1F4FB;
+  --streamvave-color-cyan-300: #A2E8F8;
+  --streamvave-color-cyan-400: #74DDF4;
+  --streamvave-color-cyan-500: #46D2F1;
+  --streamvave-color-cyan-600: #18C7ED;
+  --streamvave-color-cyan-700: #139FBE;
+  --streamvave-color-cyan-800: #0E778E;
+  --streamvave-color-cyan-900: #094F5F;
+  --streamvave-color-cyan-1000: #05282F;
+  --streamvave-color-cyan-1100: #021418;
+  --streamvave-color-blue-100: #E7F3FE;
+  --streamvave-color-blue-200: #D0E8FE;
+  --streamvave-color-blue-300: #A1D1FD;
+  --streamvave-color-blue-400: #72BAFC;
+  --streamvave-color-blue-500: #43A2FB;
+  --streamvave-color-blue-600: #148BFA;
+  --streamvave-color-blue-700: #106FC8;
+  --streamvave-color-blue-800: #0C5496;
+  --streamvave-color-blue-900: #083864;
+  --streamvave-color-blue-1000: #041C32;
+  --streamvave-color-blue-1100: #020E19;
+  --streamvave-color-indigo-100: #EEEAFF;
+  --streamvave-color-indigo-200: #DED5FF;
+  --streamvave-color-indigo-300: #BCABFF;
+  --streamvave-color-indigo-400: #9B82FF;
+  --streamvave-color-indigo-500: #7958FF;
+  --streamvave-color-indigo-600: #582EFF;
+  --streamvave-color-indigo-700: #4625CC;
+  --streamvave-color-indigo-800: #351B99;
+  --streamvave-color-indigo-900: #231266;
+  --streamvave-color-indigo-1000: #120933;
+  --streamvave-color-indigo-1100: #090519;
+  --streamvave-color-purple-100: #F4EEFF;
+  --streamvave-color-purple-200: #EADDFF;
+  --streamvave-color-purple-300: #D5BBFF;
+  --streamvave-color-purple-400: #BF99FE;
+  --streamvave-color-purple-500: #AA77FE;
+  --streamvave-color-purple-600: #9555FE;
+  --streamvave-color-purple-700: #7744CB;
+  --streamvave-color-purple-800: #593398;
+  --streamvave-color-purple-900: #3C2266;
+  --streamvave-color-purple-1000: #1E1133;
+  --streamvave-color-purple-1100: #0F0819;
+  --streamvave-color-pink-100: #FFE6EF;
+  --streamvave-color-pink-200: #FECCDE;
+  --streamvave-color-pink-300: #FE99BE;
+  --streamvave-color-pink-400: #FE669D;
+  --streamvave-color-pink-500: #FD337D;
+  --streamvave-color-pink-600: #FC005C;
+  --streamvave-color-pink-700: #CA004A;
+  --streamvave-color-pink-800: #970037;
+  --streamvave-color-pink-900: #650025;
+  --streamvave-color-pink-1000: #320012;
+  --streamvave-color-pink-1100: #190009;
+  --streamvave-color-red-100: #FDE9EA;
+  --streamvave-color-red-200: #FAD3D5;
+  --streamvave-color-red-300: #F5A6AB;
+  --streamvave-color-red-400: #F07A81;
+  --streamvave-color-red-500: #EB4E57;
+  --streamvave-color-red-600: #E6222D;
+  --streamvave-color-red-700: #B81B24;
+  --streamvave-color-red-800: #8A141B;
+  --streamvave-color-red-900: #5C0D12;
+  --streamvave-color-red-1000: #2E0709;
+  --streamvave-color-red-1100: #170305;
+  --streamvave-color-orange-100: #FFF4EA;
+  --streamvave-color-orange-200: #FFE9D5;
+  --streamvave-color-orange-300: #FFD3AA;
+  --streamvave-color-orange-400: #FFBD80;
+  --streamvave-color-orange-500: #FFA755;
+  --streamvave-color-orange-600: #FF902B;
+  --streamvave-color-orange-700: #CC7422;
+  --streamvave-color-orange-800: #995719;
+  --streamvave-color-orange-900: #663A11;
+  --streamvave-color-orange-1000: #331D08;
+  --streamvave-color-orange-1100: #190E04;
+  --streamvave-color-yellow-100: #FFFAE8;
+  --streamvave-color-yellow-200: #FFF5D1;
+  --streamvave-color-yellow-300: #FFEBA2;
+  --streamvave-color-yellow-400: #FFE074;
+  --streamvave-color-yellow-500: #FFD646;
+  --streamvave-color-yellow-600: #FFCC17;
+  --streamvave-color-yellow-700: #CCA313;
+  --streamvave-color-yellow-800: #997A0E;
+  --streamvave-color-yellow-900: #665209;
+  --streamvave-color-yellow-1000: #332905;
+  --streamvave-color-yellow-1100: #191402;
+  --streamvave-color-green-100: #EAF9F0;
+  --streamvave-color-green-200: #D4F2E0;
+  --streamvave-color-green-300: #A9E6C1;
+  --streamvave-color-green-400: #7ED9A3;
+  --streamvave-color-green-500: #53CD84;
+  --streamvave-color-green-600: #28C065;
+  --streamvave-color-green-700: #209A51;
+  --streamvave-color-green-800: #18733D;
+  --streamvave-color-green-900: #104D28;
+  --streamvave-color-green-1000: #082614;
+  --streamvave-color-green-1100: #04130A;
+  --streamvave-color-teal-100: #EAF9F3;
+  --streamvave-color-teal-200: #D4F2E7;
+  --streamvave-color-teal-300: #A9E6D0;
+  --streamvave-color-teal-400: #7ED9B9;
+  --streamvave-color-teal-500: #53CDA1;
+  --streamvave-color-teal-600: #28C08A;
+  --streamvave-color-teal-700: #209A6E;
+  --streamvave-color-teal-800: #187352;
+  --streamvave-color-teal-900: #104D37;
+  --streamvave-color-teal-1000: #08261B;
+  --streamvave-color-teal-1100: #04130E;
+  --streamvave-color-gray-100: #F6F6F6;
+  --streamvave-color-gray-200: #EEEEEE;
+  --streamvave-color-gray-300: #DDDDDD;
+  --streamvave-color-gray-400: #CBCBCB;
+  --streamvave-color-gray-500: #BABABA;
+  --streamvave-color-gray-600: #A9A9A9;
+  --streamvave-color-gray-700: #878787;
+  --streamvave-color-gray-800: #656565;
+  --streamvave-color-gray-900: #444444;
+  --streamvave-color-gray-1000: #222222;
+  --streamvave-color-gray-1100: #111111;
+  --streamvave-color-white: #ffffff;
+  --streamvave-color-white-rgba-100: rgba(255, 255, 255, 1);
+  --streamvave-color-white-rgba-095: rgba(255, 255, 255, 0.95);
+  --streamvave-color-white-rgba-090: rgba(255, 255, 255, 0.9);
+  --streamvave-color-white-rgba-085: rgba(255, 255, 255, 0.85);
+  --streamvave-color-white-rgba-080: rgba(255, 255, 255, 0.8);
+  --streamvave-color-white-rgba-075: rgba(255, 255, 255, 0.75);
+  --streamvave-color-white-rgba-070: rgba(255, 255, 255, 0.7);
+  --streamvave-color-white-rgba-065: rgba(255, 255, 255, 0.65);
+  --streamvave-color-white-rgba-060: rgba(255, 255, 255, 0.6);
+  --streamvave-color-white-rgba-055: rgba(255, 255, 255, 0.55);
+  --streamvave-color-white-rgba-050: rgba(255, 255, 255, 0.5);
+  --streamvave-color-white-rgba-045: rgba(255, 255, 255, 0.45);
+  --streamvave-color-white-rgba-040: rgba(255, 255, 255, 0.4);
+  --streamvave-color-white-rgba-035: rgba(255, 255, 255, 0.35);
+  --streamvave-color-white-rgba-030: rgba(255, 255, 255, 0.3);
+  --streamvave-color-white-rgba-025: rgba(255, 255, 255, 0.25);
+  --streamvave-color-white-rgba-020: rgba(255, 255, 255, 0.2);
+  --streamvave-color-white-rgba-015: rgba(255, 255, 255, 0.15);
+  --streamvave-color-white-rgba-010: rgba(255, 255, 255, 0.1);
+  --streamvave-color-white-rgba-005: rgba(255, 255, 255, 0.05);
+  --streamvave-color-white-rgba-000: rgba(255, 255, 255, 0);
+  --streamvave-color-black: #000000;
+  --streamvave-color-black-rgba-100: rgba(0, 0, 0, 1);
+  --streamvave-color-black-rgba-095: rgba(0, 0, 0, 0.95);
+  --streamvave-color-black-rgba-090: rgba(0, 0, 0, 0.9);
+  --streamvave-color-black-rgba-085: rgba(0, 0, 0, 0.85);
+  --streamvave-color-black-rgba-080: rgba(0, 0, 0, 0.8);
+  --streamvave-color-black-rgba-075: rgba(0, 0, 0, 0.75);
+  --streamvave-color-black-rgba-070: rgba(0, 0, 0, 0.7);
+  --streamvave-color-black-rgba-065: rgba(0, 0, 0, 0.65);
+  --streamvave-color-black-rgba-060: rgba(0, 0, 0, 0.6);
+  --streamvave-color-black-rgba-055: rgba(0, 0, 0, 0.55);
+  --streamvave-color-black-rgba-050: rgba(0, 0, 0, 0.5);
+  --streamvave-color-black-rgba-045: rgba(0, 0, 0, 0.45);
+  --streamvave-color-black-rgba-040: rgba(0, 0, 0, 0.4);
+  --streamvave-color-black-rgba-035: rgba(0, 0, 0, 0.35);
+  --streamvave-color-black-rgba-030: rgba(0, 0, 0, 0.3);
+  --streamvave-color-black-rgba-025: rgba(0, 0, 0, 0.25);
+  --streamvave-color-black-rgba-020: rgba(0, 0, 0, 0.2);
+  --streamvave-color-black-rgba-015: rgba(0, 0, 0, 0.15);
+  --streamvave-color-black-rgba-010: rgba(0, 0, 0, 0.1);
+  --streamvave-color-black-rgba-005: rgba(0, 0, 0, 0.05);
+  --streamvave-color-black-rgba-000: rgba(0, 0, 0, 0);
+  --streamvave-blur-small: blur(10px);
+  --streamvave-blur-medium: blur(15px);
+  --streamvave-blur-large: blur(25px);
+  --streamvave-font-base: "Montserrat", Helvetica, Arial, sans-serif;
+  --streamvave-font-size-tiny: 0.75rem;
+  --streamvave-font-size-small: 0.875rem;
+  --streamvave-font-size-medium: 1rem;
+  --streamvave-font-size-large: 1.125rem;
+  --streamvave-font-size-h1: 2.5rem;
+  --streamvave-font-size-h2: 2rem;
+  --streamvave-font-size-h3: 1.75rem;
+  --streamvave-font-size-h4: 1.5rem;
+  --streamvave-font-size-h5: 1.25rem;
+  --streamvave-font-size-h6: 1rem;
+  --streamvave-line-height-tiny: 1rem;
+  --streamvave-line-height-small: 1.25rem;
+  --streamvave-line-height-medium: 1.5rem;
+  --streamvave-line-height-large: 1.75rem;
+  --streamvave-line-height-h1: 3.25rem;
+  --streamvave-line-height-h2: 3rem;
+  --streamvave-line-height-h3: 2.75rem;
+  --streamvave-line-height-h4: 2.5rem;
+  --streamvave-line-height-h5: 2.25rem;
+  --streamvave-line-height-h6: 2rem;
+  --streamvave-font-weight-thin: 100;
+  --streamvave-font-weight-extra-light: 200;
+  --streamvave-font-weight-light: 300;
+  --streamvave-font-weight-regular: 400;
+  --streamvave-font-weight-medium: 500;
+  --streamvave-font-weight-semi-bold: 600;
+  --streamvave-font-weight-bold: 700;
+  --streamvave-font-weight-extra-bold: 800;
+  --streamvave-font-weight-black: 900;
+  --streamvave-border-width-small: 1px;
+  --streamvave-border-width-medium: 2px;
+  --streamvave-border-width-large: 3px;
+  --streamvave-border-radius-full: 9999px;
+  --streamvave-border-radius-large: var(--streamvave-spacing-14);
+  --streamvave-border-radius-medium: var(--streamvave-spacing-12);
+  --streamvave-border-radius-small: var(--streamvave-spacing-8);
+  --streamvave-border-radius-extra-small: var(--streamvave-spacing-4);
+  --streamvave-border-radius-none: 0;
+  --streamvave-z-index-m-10: -10;
+  --streamvave-z-index-m-9: -9;
+  --streamvave-z-index-m-8: -8;
+  --streamvave-z-index-m-7: -7;
+  --streamvave-z-index-m-6: -6;
+  --streamvave-z-index-m-5: -5;
+  --streamvave-z-index-m-4: -4;
+  --streamvave-z-index-m-3: -3;
+  --streamvave-z-index-m-2: -2;
+  --streamvave-z-index-m-1: -1;
+  --streamvave-z-index-0: 0;
+  --streamvave-z-index-10: 10;
+  --streamvave-z-index-20: 20;
+  --streamvave-z-index-30: 30;
+  --streamvave-z-index-40: 40;
+  --streamvave-z-index-50: 50;
+  --streamvave-z-index-60: 60;
+  --streamvave-z-index-70: 70;
+  --streamvave-z-index-80: 80;
+  --streamvave-z-index-90: 90;
+  --streamvave-z-index-100: 100;
+  --streamvave-z-index-dropdown: 1000;
+  --streamvave-z-index-sticky: 1010;
+  --streamvave-z-index-fixed: 1020;
+  --streamvave-z-index-sidebar: 1030;
+  --streamvave-z-index-modal: 1040;
+  --streamvave-z-index-tooltip: 1050;
+  --streamvave-z-index-alert: 1060;
+  --streamvave-z-index-message: 1070;
+  --streamvave-z-index-loader: 2000;
+  --streamvave-spacing-0: 0;
+  --streamvave-spacing-4: 0.25rem;
+  --streamvave-spacing-8: 0.5rem;
+  --streamvave-spacing-12: 0.75rem;
+  --streamvave-spacing-14: 0.875rem;
+  --streamvave-spacing-16: 1rem;
+  --streamvave-spacing-20: 1.25rem;
+  --streamvave-spacing-24: 1.5rem;
+  --streamvave-spacing-28: 1.75rem;
+  --streamvave-spacing-32: 2rem;
+  --streamvave-spacing-36: 2.25rem;
+  --streamvave-spacing-40: 2.5rem;
+  --streamvave-spacing-44: 2.75rem;
+  --streamvave-spacing-48: 3rem;
+  --streamvave-spacing-52: 3.25rem;
+  --streamvave-spacing-56: 3.5rem;
+  --streamvave-spacing-60: 3.75rem;
+  --streamvave-spacing-64: 4rem;
+  --streamvave-spacing-68: 4.25rem;
+  --streamvave-spacing-72: 4.5rem;
+  --streamvave-spacing-80: 5rem;
+  --streamvave-spacing-96: 6rem;
+  --streamvave-spacing-112: 7rem;
+  --streamvave-spacing-128: 8rem;
+  --streamvave-spacing-144: 9rem;
+  --streamvave-spacing-160: 10rem;
+  --streamvave-spacing-176: 11rem;
+  --streamvave-spacing-192: 12rem;
+  --streamvave-spacing-208: 13rem;
+  --streamvave-spacing-224: 14rem;
+  --streamvave-spacing-240: 15rem;
+  --streamvave-spacing-256: 16rem;
+  --streamvave-spacing-288: 18rem;
+  --streamvave-spacing-320: 20rem;
+  --streamvave-spacing-384: 24rem;
+  --streamvave-spacing-448: 28rem;
+  --streamvave-spacing-480: 30rem;
+  --streamvave-spacing-544: 34rem;
+  --streamvave-rows: 1;
+  --streamvave-columns: 1;
+  --streamvave-gap: 1;
+  --streamvave-column: 1;
+  --streamvave-box-shadow-small: 0px 0px 5px 0px rgba(0, 0, 0, .02), 0px 2px 10px 0px rgba(0, 0, 0, .06), 0px 0px 1px 0px rgba(0, 0, 0, .3);
+  --streamvave-box-shadow-medium: 0px 0px 15px 0px rgba(0, 0, 0, .03), 0px 2px 30px 0px rgba(0, 0, 0, .08), 0px 0px 1px 0px rgba(0, 0, 0, .3);
+  --streamvave-box-shadow-large: 0px 0px 30px 0px rgba(0, 0, 0, .04), 0px 30px 60px 0px rgba(0, 0, 0, .12), 0px 0px 1px 0px rgba(0, 0, 0, .3);
+  --streamvave-transition-15s: all .15s cubic-bezier(.4, 0, .2, 1);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.eot");
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-MediumItalic.eot");
+  src: local("Montserrat Medium Italic"), local("Montserrat-MediumItalic"), url("../fonts/Montserrat-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-MediumItalic.woff") format("woff"), url("../fonts/Montserrat-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Thin.eot");
+  src: local("Montserrat Thin"), local("Montserrat-Thin"), url("../fonts/Montserrat-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Thin.woff") format("woff"), url("../fonts/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraLightItalic.eot");
+  src: local("Montserrat ExtraLight Italic"), local("Montserrat-ExtraLightItalic"), url("../fonts/Montserrat-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraLightItalic.woff") format("woff"), url("../fonts/Montserrat-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-BoldItalic.eot");
+  src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"), url("../fonts/Montserrat-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-BoldItalic.woff") format("woff"), url("../fonts/Montserrat-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraLight.eot");
+  src: local("Montserrat ExtraLight"), local("Montserrat-ExtraLight"), url("../fonts/Montserrat-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraLight.woff") format("woff"), url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBoldItalic.eot");
+  src: local("Montserrat ExtraBold Italic"), local("Montserrat-ExtraBoldItalic"), url("../fonts/Montserrat-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBoldItalic.woff") format("woff"), url("../fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Italic.eot");
+  src: local("Montserrat Italic"), local("Montserrat-Italic"), url("../fonts/Montserrat-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Italic.woff") format("woff"), url("../fonts/Montserrat-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-LightItalic.eot");
+  src: local("Montserrat Light Italic"), local("Montserrat-LightItalic"), url("../fonts/Montserrat-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-LightItalic.woff") format("woff"), url("../fonts/Montserrat-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-BlackItalic.eot");
+  src: local("Montserrat Black Italic"), local("Montserrat-BlackItalic"), url("../fonts/Montserrat-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-BlackItalic.woff") format("woff"), url("../fonts/Montserrat-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBoldItalic.eot");
+  src: local("Montserrat SemiBold Italic"), local("Montserrat-SemiBoldItalic"), url("../fonts/Montserrat-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff"), url("../fonts/Montserrat-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ExtraBold.eot");
+  src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ExtraBold.woff") format("woff"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.eot");
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("../fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Black.woff") format("woff"), url("../fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-ThinItalic.eot");
+  src: local("Montserrat Thin Italic"), local("Montserrat-ThinItalic"), url("../fonts/Montserrat-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-ThinItalic.woff") format("woff"), url("../fonts/Montserrat-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--streamvave-font-base);
+  font-size: var(--streamvave-font-size-medium);
+  background: var(--streamvave-color-gray-100);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--streamvave-color-black);
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+label {
+  background-color: transparent;
+  border: initial;
+  outline: none;
+}
+
+svg {
+  display: flex;
+}
+
+* {
+  scrollbar-color: var(--streamvave-color-gray-500) transparent;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 22px;
+  background-color: var(--streamvave-color-gray-300);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  border: none;
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg {
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--streamvave-spacing-0) var(--streamvave-spacing-20);
+}
+
+.container {
+  max-width: 100%;
+}
+
+.container-sm {
+  max-width: 1200px;
+}
+
+.container-md {
+  max-width: 1550px;
+}
+
+.container-lg {
+  max-width: 1700px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: scale(1);
+  cursor: pointer;
+  padding: var(--streamvave-spacing-12) var(--streamvave-spacing-12);
+  border-radius: var(--streamvave-border-radius-medium);
+  transition: var(--streamvave-transition-15s);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: scale(1);
+  cursor: pointer;
+  color: var(--streamvave-color-white);
+  background-color: var(--streamvave-color-black);
+  padding: var(--streamvave-spacing-12) var(--streamvave-spacing-12);
+  border-radius: var(--streamvave-border-radius-large);
+  transition: var(--streamvave-transition-15s);
+}
+
+.btn-fill:active {
+  transform: scale(0.97);
+}
+
+.btn-fill[data-disabled=true] {
+  pointer-events: none;
+  color: var(--streamvave-color-gray-600);
+  background-color: var(--streamvave-color-gray-300);
+}
+
+.input {
+  max-width: 100%;
+  width: 100%;
+  border-radius: var(--streamvave-border-radius-large);
+  border: 2px solid var(--streamvave-color-gray-300);
+  transition: var(--streamvave-transition-15s);
+  cursor: text;
+  padding: var(--streamvave-spacing-12) var(--streamvave-spacing-40) var(--streamvave-spacing-12) var(--streamvave-spacing-14);
+}
+
+.input__icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: var(--streamvave-spacing-0);
+  right: var(--streamvave-spacing-0);
+  bottom: var(--streamvave-spacing-0);
+  z-index: var(--streamvave-z-index-10);
+  padding: var(--streamvave-spacing-12);
+  margin: 2px;
+  border-radius: 0 var(--streamvave-border-radius-large) var(--streamvave-border-radius-large) 0;
+}
+
+.input__icon svg {
+  width: var(--streamvave-spacing-20);
+  height: var(--streamvave-spacing-20);
+  transition: var(--streamvave-transition-15s);
+}
+
+.input__icon--static {
+  color: var(--streamvave-color-gray-600);
+}
+
+.input__icon--static.hover {
+  color: var(--streamvave-color-purple-600);
+}
+
+.input__icon--static.focus {
+  color: var(--streamvave-color-purple-700);
+}
+
+.input__icon--true {
+  color: var(--streamvave-color-green-600);
+}
+
+.input__icon--false {
+  color: var(--streamvave-color-red-600);
+}
+
+.input__icon--true svg,
+.input__icon--false svg,
+.input__icon--static svg {
+  opacity: 0;
+}
+
+.input__icon.active svg {
+  opacity: 1;
+}
+
+.input:focus {
+  border-color: var(--streamvave-color-gray-700);
+}
+
+.input:hover {
+  border-color: var(--streamvave-color-gray-600);
+}
+
+.input::placeholder {
+  color: var(--streamvave-color-gray-600);
+}
+
+.input:focus::placeholder {
+  color: var(--streamvave-color-white);
+}
+
+.input-true {
+  border-color: var(--streamvave-color-green-600);
+}
+
+.input-true:hover,
+.input-true:focus {
+  border-color: var(--streamvave-color-green-600);
+}
+
+.input-false {
+  border-color: var(--streamvave-color-red-600);
+}
+
+.input-false:hover,
+.input-false:focus {
+  border-color: var(--streamvave-color-red-600);
+}
+
+.switch {
+  display: inline-block;
+  height: 20px;
+  width: 39px;
+  position: relative;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch-slider {
+  cursor: pointer;
+  position: absolute;
+  z-index: var(--streamvave-z-index-10);
+  top: var(--streamvave-spacing-0);
+  left: var(--streamvave-spacing-0);
+  right: var(--streamvave-spacing-0);
+  bottom: var(--streamvave-spacing-0);
+  background-color: var(--streamvave-color-black-rgba-015);
+  transition: var(--streamvave-transition-15s);
+}
+
+.switch-slider:active {
+  background-color: var(--streamvave-color-black-rgba-020);
+}
+
+.switch-slider::before,
+.switch-slider::after {
+  content: "";
+  position: absolute;
+  top: var(--streamvave-spacing-0);
+  bottom: var(--streamvave-spacing-0);
+  transition: var(--streamvave-transition-15s);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.switch-slider:before {
+  left: 2px;
+  z-index: var(--streamvave-z-index-20);
+  width: var(--streamvave-spacing-16);
+  height: var(--streamvave-spacing-16);
+  background-color: var(--streamvave-color-white);
+}
+
+.switch-slider:after {
+  right: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--streamvave-border-radius-full);
+  border: 2px solid var(--streamvave-color-white);
+}
+
+.switch input:checked + .switch-slider {
+  background-color: var(--streamvave-color-green-600);
+}
+
+.switch input:checked + .switch-slider:active {
+  background-color: var(--streamvave-color-green-700);
+}
+
+.switch input:checked + .switch-slider:before {
+  transform: translateX(19px);
+}
+
+.switch input:checked + .switch-slider:after {
+  width: 1px;
+  transform: translateX(-18px);
+}
+
+.switch .switch-slider.switch-round {
+  border-radius: var(--streamvave-border-radius-full);
+}
+
+.switch .switch-slider.switch-round:before {
+  border-radius: var(--streamvave-border-radius-full);
+}
+
+.radio-buttons-wrapper {
+  display: grid;
+  gap: 8px;
+}
+
+.radio-buttons input {
+  display: none;
+}
+
+.radio-buttons label {
+  grid-column: auto/span 1;
+  width: 100%;
+  border-radius: var(--streamvave-border-radius-small);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--streamvave-color-gray-300);
+  cursor: pointer;
+  transition: var(--streamvave-transition-15s);
+}
+
+.radio-buttons label:hover {
+  border-color: var(--streamvave-color-green-600);
+}
+
+.radio-buttons label:active {
+  border-color: var(--streamvave-color-green-700);
+}
+
+.radio-buttons input:checked + label {
+  border-color: var(--streamvave-color-green-600);
+}
+
+.radio-buttons input:checked + label:active {
+  border-color: var(--streamvave-color-green-700);
+}
+
+.stream {
+  padding: var(--streamvave-spacing-0) var(--streamvave-spacing-0) var(--streamvave-spacing-60);
+}
+
+.stream__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--streamvave-spacing-20);
+}
+
+.stream-arrangement-element-player-chat-none .chat {
+  display: none;
+}
+
+.stream-arrangement-element-player-chat-right .chat {
+  display: block;
+}
+
+.stream-arrangement-element-player-chat-left .stream__blocks {
+  flex-direction: row-reverse;
+}
+
+.stream__blocks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.stream__block {
+  overflow: hidden;
+  background-color: var(--streamvave-color-black-rgba-015);
+  border-radius: var(--streamvave-border-radius-medium);
+}
+
+.player {
+  aspect-ratio: 16/9;
+  max-width: 100%;
+  width: 100%;
+  border-color: initial !important;
+}
+
+.player .spoiler svg {
+  width: var(--streamvave-spacing-32);
+  height: var(--streamvave-spacing-32);
+}
+
+.player iframe {
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.chat {
+  flex-shrink: 0;
+  width: 350px;
+  position: relative;
+}
+
+.chat .spoiler svg {
+  width: var(--streamvave-spacing-28);
+  height: var(--streamvave-spacing-28);
+}
+
+.chat-inner {
+  position: absolute;
+  top: -35%;
+  left: -33%;
+  transform: scale(0.6);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.spoiler {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.spoiler svg {
+  color: var(--streamvave-color-white);
+}
+
+.spoiler.active {
+  display: flex;
+}
+
+.stream__btn {
+  max-width: 100%;
+  width: 100%;
+}
+
+.stream__btn svg {
+  width: var(--streamvave-spacing-20);
+  height: var(--streamvave-spacing-20);
+  color: var(--streamvave-color-black);
+}
+
+.stream__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--streamvave-spacing-24);
+}
+
+.stream-widget {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--streamvave-spacing-20);
+}
+
+.stream-widget__btn {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--streamvave-spacing-8);
+}
+
+.stream-widget__btn-icon svg {
+  width: var(--streamvave-spacing-20);
+  height: var(--streamvave-spacing-20);
+}
+
+.stream-widget__btn-text {
+  font-size: var(--streamvave-font-size-tiny);
+  font-weight: var(--streamvave-font-weight-semi-bold);
+}
+
+.add-nickname__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--streamvave-spacing-16);
+}
+
+.add-nickname__input {
+  position: relative;
+}
+
+.add-nickname__btn {
+  max-width: 100%;
+  width: 100%;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__content {
+  height: var(--streamvave-spacing-448);
+}
+
+.navigation-content__title {
+  font-size: var(--streamvave-font-size-medium);
+  font-weight: var(--streamvave-font-weight-medium);
+  padding: var(--streamvave-spacing-16) var(--streamvave-spacing-20) var(--streamvave-spacing-16) var(--streamvave-spacing-16);
+  border-bottom: 1px solid var(--streamvave-color-black-rgba-005);
+}
+
+.navigation-content.noactive {
+  display: none;
+}
+
+.navigation-content.block {
+  display: block;
+}
+
+.navigation-content__items {
+  display: flex;
+  flex-direction: column;
+  height: 24.8125rem;
+  overflow-x: hidden;
+  padding-bottom: var(--streamvave-spacing-24);
+}
+
+.navigation-content__item {
+  padding: var(--streamvave-spacing-16) var(--streamvave-spacing-20) var(--streamvave-spacing-16) var(--streamvave-spacing-16);
+  border-bottom: 1px solid var(--streamvave-color-black-rgba-005);
+}
+
+.navigation-content__item-title {
+  display: flex;
+  flex-direction: row;
+  gap: var(--streamvave-spacing-8);
+  font-size: var(--streamvave-font-size-medium);
+}
+
+.navigation-content__item-title svg {
+  width: var(--streamvave-spacing-16);
+  height: var(--streamvave-spacing-16);
+  color: var(--streamvave-color-black);
+}
+
+.item-wrap-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-wrap-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.navigation__tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--streamvave-spacing-4);
+  padding: var(--streamvave-spacing-4);
+  border-radius: 0 0 var(--streamvave-border-radius-large) var(--streamvave-border-radius-large);
+  background-color: var(--streamvave-color-white);
+  box-shadow: 0 -8px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.navigation__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--streamvave-spacing-8) var(--streamvave-spacing-20) var(--streamvave-spacing-8) var(--streamvave-spacing-20);
+  border-radius: var(--streamvave-border-radius-large);
+  cursor: pointer;
+  transition: var(--streamvave-transition-15s);
+}
+
+.navigation__tab.active {
+  background-color: var(--streamvave-color-black-rgba-010);
+}
+
+.navigation__tab.active .navigation__tab-icon-default {
+  display: none;
+}
+
+.navigation__tab.active .navigation__tab-icon-fill {
+  display: block;
+}
+
+.navigation__tab-icon {
+  pointer-events: none;
+  transition: var(--streamvave-transition-15s);
+}
+
+.navigation__tab-icon svg {
+  width: var(--streamvave-spacing-24);
+  height: var(--streamvave-spacing-24);
+}
+
+.navigation__tab-icon-fill {
+  display: none;
+}
+
+.arrangement-element__wrap {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.arrangement-element__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--streamvave-spacing-4);
+  height: var(--streamvave-spacing-68);
+  padding: var(--streamvave-spacing-8);
+}
+
+.arrangement-element__item svg {
+  width: var(--streamvave-spacing-16);
+  height: var(--streamvave-spacing-16);
+  color: var(--streamvave-color-white);
+}
+
+.arrangement-element__item-player,
+.arrangement-element__item-chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--streamvave-color-gray-600);
+  border-radius: var(--streamvave-border-radius-extra-small);
+}
+
+.arrangement-element__item-player {
+  width: 100%;
+}
+
+.arrangement-element__item-chat {
+  width: 50%;
+}
+
+.arrangement-element__item--1 .arrangement-element__item-chat {
+  display: none;
+}
+
+.arrangement-element__item--3 {
+  flex-direction: row-reverse;
+}
+
+.width-container__wrap {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.width-container__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--streamvave-spacing-68);
+  padding: var(--streamvave-spacing-8);
+}
+
+.width-container__item svg {
+  width: var(--streamvave-spacing-20);
+  height: var(--streamvave-spacing-20);
+  color: var(--streamvave-color-white);
+}
+
+.width-container__item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--streamvave-color-white);
+  background-color: var(--streamvave-color-gray-600);
+  border-radius: var(--streamvave-border-radius-extra-small);
+}
+
+.width-container__item--1 .width-container__item-container {
+  width: 60%;
+}
+
+.width-container__item--2 .width-container__item-container {
+  width: 80%;
+}
+
+.width-container__item--3 .width-container__item-container {
+  width: 90%;
+}
+
+.width-container__item--4 .width-container__item-container {
+  width: 100%;
+}
+
+.header {
+  padding: var(--streamvave-spacing-14) var(--streamvave-spacing-0);
+}
+
+.header__btn {
+  padding: var(--streamvave-spacing-12) var(--streamvave-spacing-36);
+}
+
+.header__btn svg {
+  width: var(--streamvave-spacing-16);
+  height: var(--streamvave-spacing-16);
+  color: var(--streamvave-color-black);
+}
+
+.header__blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo svg {
+  width: 180px;
+  height: 28px;
+  color: var(--streamvave-color-black);
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  padding: var(--streamvave-spacing-64) var(--streamvave-spacing-24);
+  top: var(--streamvave-spacing-0);
+  left: var(--streamvave-spacing-0);
+  right: var(--streamvave-spacing-0);
+  bottom: var(--streamvave-spacing-0);
+  background-color: var(--streamvave-color-black-rgba-060);
+  z-index: var(--streamvave-z-index-modal);
+  height: 100dvh;
+  overflow-x: hidden;
+  transition: var(--streamvave-transition-15s);
+}
+
+.modal__wrap {
+  max-width: var(--streamvave-spacing-384);
+  width: 100%;
+  margin: auto 0;
+}
+
+.modal-content {
+  position: relative;
+  border-radius: var(--streamvave-border-radius-large);
+  background-color: var(--streamvave-color-white);
+  box-shadow: var(--streamvave-box-shadow-small);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-header {
+  font-size: var(--streamvave-font-size-medium);
+  font-weight: var(--streamvave-font-weight-medium);
+  padding: var(--streamvave-spacing-16) var(--streamvave-spacing-20);
+}
+
+.modal-body__add-nickname {
+  padding: var(--streamvave-spacing-8) var(--streamvave-spacing-20) var(--streamvave-spacing-20) var(--streamvave-spacing-20);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: var(--streamvave-spacing-4);
+  right: var(--streamvave-spacing-4);
+  z-index: var(--streamvave-z-index-10);
+  cursor: pointer;
+}
+
+.modal-close-btn__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--streamvave-spacing-8);
+  background-color: transparent;
+  border-radius: var(--streamvave-border-radius-full);
+  overflow: hidden;
+}
+
+.modal-close-btn__wrap svg {
+  width: var(--streamvave-spacing-16);
+  height: var(--streamvave-spacing-16);
+  color: var(--streamvave-color-gray-700);
+}
+
+.modal-close-btn:hover .modal-close-btn__wrap {
+  background-color: var(--streamvave-color-black-rgba-005);
+}
+
+.modal-close-btn:active .modal-close-btn__wrap {
+  background-color: var(--streamvave-color-black-rgba-010);
+}
+
+.modal__add-nickname.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal__add-nickname.active .modal-content {
+  transform: scale(1);
+}
+
+.modal[data-modal-active=false] {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal[data-modal-active=false] .modal-content {
+  transform: scale(1.03);
+}
+
+.modal[data-modal-active=true] {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal[data-modal-active=true] .modal-content {
+  transform: scale(1);
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    background-color: var(--streamvave-color-black-rgba-010);
+  }
+
+  .btn-fill:hover {
+    background-color: var(--streamvave-color-gray-1000);
+  }
+}
+
+@media (hover: none) {
+  .btn:active {
+    background-color: var(--streamvave-color-black-rgba-010);
+  }
+
+  .btn-fill:active {
+    background-color: var(--streamvave-color-gray-1000);
+  }
+}
+/*# sourceMappingURL=maps/main.min.css.map */

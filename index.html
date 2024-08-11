@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>StreamVave</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
+	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <header class="header">
+
+    <div class="container">
+
+        <div class="header__blocks">
+            <div class="header__block">
+                <a class="logo" href="/">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__block">
+                <button class="header__btn btn">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#icon-plus"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+    <section class="stream stream-arrangement-element-player-chat-none">
+
+    <div class="stream__container container-sm">
+
+        <div class="stream__wrap">
+            <div class="stream__blocks">
+                <div class="stream__block player">
+                    <iframe id="stream" src="" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+                </div>
+                <div class="stream__block chat">
+                    <div class="chat-inner">
+                        <!-- <iframe
+                            src="https://www.giambaj.it/twitch/jchat/v2/?channel=bratishkinoff&animate=true&bots=true&hide_commands=true&size=1&font=4"
+                            frameborder="0" width="580" height="750"></iframe> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="stream__buttons">
+
+                <button class="stream__btn btn">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#icon-brush"></use>
+                    </svg>
+                </button>
+
+                <div class="stream-widget">
+                    <button class="stream-widget__btn btn">
+                        <div class="stream-widget__btn-icon">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-emoji-laughing"></use>
+                            </svg>
+                        </div>
+                        <div class="stream-widget__btn-text">
+                            Мем
+                        </div>
+                    </button>
+                    <button class="stream-widget__btn btn">
+                        <div class="stream-widget__btn-icon">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-cash-coin"></use>
+                            </svg>
+                        </div>
+                        <div class="stream-widget__btn-text">
+                            Донат
+                        </div>
+                    </button>
+                    <button class="stream-widget__btn btn">
+                        <div class="stream-widget__btn-icon">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-eye"></use>
+                            </svg>
+                        </div>
+                        <div class="stream-widget__btn-text">
+                            Скрыть
+                        </div>
+                    </button>
+                    <button class="stream-widget__btn btn">
+                        <div class="stream-widget__btn-icon">
+                            <svg>
+                                <use xlink:href="img/sprites/multi.svg#icon-eye-slash-fill"></use>
+                            </svg>
+                        </div>
+                        <div class="stream-widget__btn-text">
+                            Показать
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+    <div class="modal modal__add-nickname" data-modal-active="false">
+    <div class="modal__wrap">
+        <div class="modal-content">
+            <div class="modal-header">
+                Впишите никнейм стримера
+            </div>
+            <div class="modal-body modal-body__add-nickname">
+
+                <div class="add-nickname">
+
+    <div class="add-nickname__wrap">
+        <div class="add-nickname__input">
+            <input id="input-nick" class="input" type="text" placeholder="maxuiux">
+            <div id="input-icon-static" class="input__icon input__icon--static active">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-twitch"></use>
+                </svg>
+            </div>
+            <div id="input-icon-true" class="input__icon input__icon--true">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-check-circle-fill"></use>
+                </svg>
+            </div>
+            <div id="input-icon-false" class="input__icon input__icon--false">
+                <svg>
+                    <use xlink:href="img/sprites/multi.svg#icon-x-circle-fill"></use>
+                </svg>
+            </div>
+        </div>
+        <button id="btn-submit-nick" class="add-nickname__btn btn-fill" type="button" data-disabled="true">
+            Добавить
+        </button>
+    </div>
+
+</div>
+                
+            </div>
+            <button class="modal-close-btn modal-close-btn__add-nickname">
+                <div class="modal-close-btn__wrap">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#icon-close"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+    <div class="modal modal__nav" data-modal-active="false">
+    <div class="modal__wrap">
+        <div class="modal-content">
+
+            <div class="navigation">
+
+                <div class="navigation__wrap">
+
+                    <div class="navigation__content">
+
+                        <div class="navigation-content js-tab-content" data-content="nav-grid">
+                            <div class="navigation-content__title">
+                                Расположение
+                            </div>
+                            <div class="navigation-content__items">
+
+                                <div class="navigation-content__item">
+                                    <div class="navigation-content__item-wrap item-wrap-1">
+                                        <div class="navigation-content__item-title">
+                                            <svg>
+                                                <use xlink:href="img/sprites/multi.svg#icon-fullscreen">
+                                                </use>
+                                            </svg>
+                                            <span>
+                                                Полноэкранный режим
+                                            </span>
+                                        </div>
+                                        <div class="navigation-content__item-box">
+                                            <label class="switch" for="checkbox-full-screen">
+                                                <input class="switch-btn-full-screen" type="checkbox"
+                                                    id="checkbox-full-screen">
+                                                <div class="switch-slider switch-round"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="navigation-content__item">
+                                    <div class="navigation-content__item-wrap item-wrap-1">
+                                        <div class="navigation-content__item-title">
+                                            <svg>
+                                                <use xlink:href="img/sprites/multi.svg#icon-layout-sidebar-reverse">
+                                                </use>
+                                            </svg>
+                                            <span>
+                                                Режим кинотеатра
+                                            </span>
+                                        </div>
+                                        <div class="navigation-content__item-box">
+                                            <label class="switch" for="checkbox-cinema-mode">
+                                                <input class="switch-btn-cinema-mode" type="checkbox"
+                                                    id="checkbox-cinema-mode">
+                                                <div class="switch-slider switch-round"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="navigation-content__item">
+                                    <div class="navigation-content__item-wrap item-wrap-1">
+                                        <div class="navigation-content__item-title">
+                                            <svg>
+                                                <use xlink:href="img/sprites/multi.svg#icon-chat-square">
+                                                </use>
+                                            </svg>
+                                            <span> 
+                                                Упрощенный чат
+                                            </span>
+                                        </div>
+                                        <div class="navigation-content__item-box">
+                                            <label class="switch" for="checkbox-simplified-chat">
+                                                <input class="switch-btn-simplified-chat" type="checkbox"
+                                                    id="checkbox-simplified-chat">
+                                                <div class="switch-slider switch-round"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="navigation-content__item">
+                                    <div class="navigation-content__item-wrap item-wrap-2">
+                                        <div class="navigation-content__item-title">
+                                            <svg>
+                                                <use xlink:href="img/sprites/multi.svg#icon-window-sidebar"></use>
+                                            </svg>
+                                            <span>
+                                                Расположение
+                                            </span>
+                                        </div>
+                                        <div class="navigation-content__item-box">
+
+                                            <div class="radio-buttons arrangement-element">
+                                                <div class="radio-buttons-wrapper arrangement-element__wrap">
+                                                    <input class="radio-btn-arrangement-element" id="arrangement-center"
+                                                        type="radio" name="arrangement-element" value="1">
+                                                    <label for="arrangement-center"
+                                                        class="arrangement-element__item arrangement-element__item--1">
+                                                        <div class="arrangement-element__item-player">
+                                                            <svg>
+                                                                <use xlink:href="img/sprites/multi.svg#icon-play-fill">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="arrangement-element__item-chat">
+                                                            <svg>
+                                                                <use xlink:href="img/sprites/multi.svg#icon-chat-square-fill">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                    </label>
+                                                    <input class="radio-btn-arrangement-element" id="arrangement-right"
+                                                        type="radio" name="arrangement-element" value="2">
+                                                    <label for="arrangement-right"
+                                                        class="arrangement-element__item arrangement-element__item--2">
+                                                        <div class="arrangement-element__item-player">
+                                                            <svg>
+                                                                <use xlink:href="img/sprites/multi.svg#icon-play-fill">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="arrangement-element__item-chat">
+                                                            <svg>
+                                                                <use xlink:href="img/sprites/multi.svg#icon-chat-square-fill">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                    </label>
+                                                    <input class="radio-btn-arrangement-element" id="arrangement-left"
+                                                        type="radio" name="arrangement-element" value="3">
+                                                    <label for="arrangement-left"
+                                                        class="arrangement-element__item arrangement-element__item--3">
+                                                        <div class="arrangement-element__item-player">
+                                                            <svg>
+                                                                <use xlink:href="img/sprites/multi.svg#icon-play-fill">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="arrangement-element__item-chat">
+                                                            <svg>
+                                                                <use xlink:href="img/sprites/multi.svg#icon-chat-square-fill">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="navigation-content__item">
+                                    <div class="navigation-content__item-wrap item-wrap-2">
+                                        <div class="navigation-content__item-title">
+                                            <svg>
+                                                <use xlink:href="img/sprites/multi.svg#icon-aspect-ratio">
+                                                </use>
+                                            </svg>
+                                            <span>
+                                                Ширина контейнера
+                                            </span>
+                                        </div>
+                                        <div class="navigation-content__item-box">
+
+                                            <div class="radio-buttons width-container">
+                                                <div class="radio-buttons-wrapper width-container__wrap">
+
+                                                    <input class="radio-btn-width-container" id="width-container-small"
+                                                        type="radio" name="width-container" value="1">
+                                                    <label for="width-container-small"
+                                                        class="width-container__item width-container__item--1">
+                                                        <div class="width-container__item-container">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href="img/sprites/multi.svg#icon-arrows">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                    </label>
+                                                    <input class="radio-btn-width-container" id="width-container-medium"
+                                                        type="radio" name="width-container" value="2">
+                                                    <label for="width-container-medium"
+                                                        class="width-container__item width-container__item--2">
+                                                        <div class="width-container__item-container">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href="img/sprites/multi.svg#icon-arrows">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                    </label>
+                                                    <input class="radio-btn-width-container" id="width-container-large"
+                                                        type="radio" name="width-container" value="3">
+                                                    <label for="width-container-large"
+                                                        class="width-container__item width-container__item--3">
+                                                        <div class="width-container__item-container">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href="img/sprites/multi.svg#icon-arrows">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                    </label>
+                                                    <input class="radio-btn-width-container" id="width-container-full"
+                                                        type="radio" name="width-container" value="4">
+                                                    <label for="width-container-full"
+                                                        class="width-container__item width-container__item--4">
+                                                        <div class="width-container__item-container">
+                                                            <svg>
+                                                                <use
+                                                                    xlink:href="img/sprites/multi.svg#icon-arrows">
+                                                                </use>
+                                                            </svg>
+                                                        </div>
+                                                    </label>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navigation-content js-tab-content" data-content="nav-theme">
+                            <div class="navigation-content__title">
+                                Оформление
+                            </div>
+
+                            <div class="navigation-content__items">
+
+                                <div class="navigation-content__item">
+                                    <div class="navigation-content__item-wrap item-wrap-1">
+                                        <div class="navigation-content__item-title">
+                                            Добавить чат
+                                        </div>
+                                        <div class="navigation-content__item-box">
+                                            <label class="switch" for="checkbox">
+                                                <input type="checkbox" id="checkbox">
+                                                <div class="switch-slider switch-round"></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="navigation-content js-tab-content" data-content="nav-widget">
+                            <div class="navigation-content__title">
+                                Расширения
+                            </div>
+                        </div>
+
+                        <div class="navigation-content js-tab-content" data-content="nav-info">
+                            <div class="navigation-content__title">
+                                О проекте
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="navigation__tabs">
+
+                        <button class="navigation__tab btn js-tab-button" data-tab="nav-grid">
+                            <div class="navigation__tab-icon">
+                                <div class="navigation__tab-icon-default">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-grid"></use>
+                                    </svg>
+                                </div>
+                                <div class="navigation__tab-icon-fill">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-grid-fill"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+
+                        <button class="navigation__tab btn js-tab-button" data-tab="nav-theme">
+                            <div class="navigation__tab-icon">
+                                <div class="navigation__tab-icon-default">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-theme"></use>
+                                    </svg>
+                                </div>
+                                <div class="navigation__tab-icon-fill">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-theme-fill"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+
+                        <button class="navigation__tab btn js-tab-button" data-tab="nav-widget">
+                            <div class="navigation__tab-icon">
+                                <div class="navigation__tab-icon-default">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-puzzle"></use>
+                                    </svg>
+                                </div>
+                                <div class="navigation__tab-icon-fill">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-puzzle-fill"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+
+                        <button class="navigation__tab btn js-tab-button" data-tab="nav-info">
+                            <div class="navigation__tab-icon">
+                                <div class="navigation__tab-icon-default">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-info-circle"></use>
+                                    </svg>
+                                </div>
+                                <div class="navigation__tab-icon-fill">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-info-circle-fill"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+
+                        <button class="navigation__tab btn js-tab-button" data-tab="nav-info">
+                            <div class="navigation__tab-icon">
+                                <div class="navigation__tab-icon-default">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-logo"></use>
+                                    </svg>
+                                </div>
+                                <div class="navigation__tab-icon-fill">
+                                    <svg>
+                                        <use xlink:href="img/sprites/multi.svg#icon-logo-fill"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="modal-close-btn modal-close-btn__nav">
+                <div class="modal-close-btn__wrap">
+                    <svg>
+                        <use xlink:href="img/sprites/multi.svg#icon-close"></use>
+                    </svg>
+                </div>
+            </button>
+
+        </div>
+    </div>
+</div>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
